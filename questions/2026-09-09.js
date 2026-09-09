@@ -3,10 +3,10 @@ window.TEST_DATA = {
 
   title: "9/9 Daily Test",
 
-  subtitle: "YES24 Marketing Execution Strategy",
+  subtitle: "Selenium Web Crawling Mission",
 
   description:
-    "3C / SWOT Review → 4P Marketing Mix → Customer Journey → Message & Content → Media Mix → SQL Bridge",
+    "Selenium 기본 개념 → WebDriver → 요소 탐색 → 반복 수집 → Explicit Wait → Crawling Mission",
 
   questions: [
     {
@@ -17,16 +17,16 @@ window.TEST_DATA = {
       score: 8,
 
       question:
-        "3C Analysis에 대한 설명으로 가장 적절한 것은 무엇입니까?",
+        "다음 중 Selenium을 사용하는 이유로 가장 적절한 것은 무엇입니까?",
 
       options: [
-        "Customer, Content, Campaign을 분석하여 광고 소재를 제작하는 방법이다.",
+        "HTML 문자열을 Python Dictionary로 변환하기 위해 사용한다.",
 
-        "Customer, Competitor, Company 관점에서 시장과 전략적 상황을 검토하는 Framework이다.",
+        "JavaScript에 의해 동적으로 생성되거나 변경되는 웹페이지를 실제 Browser처럼 제어하기 위해 사용한다.",
 
-        "Cost, Conversion, Customer를 이용하여 광고비를 계산하는 방법이다.",
+        "MySQL Database에 데이터를 저장하기 위해 사용한다.",
 
-        "Company의 Strength와 Weakness만을 분석하는 내부 분석 방법이다.",
+        "Pandas DataFrame을 Excel 파일로 저장하기 위해 사용한다.",
       ],
     },
 
@@ -38,16 +38,20 @@ window.TEST_DATA = {
       score: 8,
 
       question:
-        "다음 중 SWOT의 구분이 올바르지 않은 것은 무엇입니까?",
+        "다음 코드에서 driver의 역할로 가장 적절한 것은 무엇입니까?",
+
+      code: `from selenium import webdriver
+
+driver = webdriver.Chrome()`,
 
       options: [
-        "Strengths - 내부 요인",
+        "HTML 문서를 문자열로 저장하는 객체이다.",
 
-        "Weaknesses - 내부 요인",
+        "Chrome Browser를 Python에서 제어하기 위한 WebDriver 객체이다.",
 
-        "Opportunities - 외부 요인",
+        "BeautifulSoup 객체를 생성하는 기능이다.",
 
-        "Threats - 내부 요인",
+        "웹사이트의 CSS 파일을 다운로드하는 객체이다.",
       ],
     },
 
@@ -59,16 +63,23 @@ window.TEST_DATA = {
       score: 8,
 
       question:
-        "YES24 경제·경영 도서 데이터를 검토한 결과 '도서별 Rating, Review Count, 판매지수 등의 상품 반응 정보를 활용할 수 있다'는 Evidence를 확인했다고 가정합니다. 이를 SWOT의 Strength 후보로 해석할 때 가장 적절한 것은 무엇입니까?",
+        "다음 Selenium 코드에서 By.CSS_SELECTOR의 역할로 가장 적절한 것은 무엇입니까?",
+
+      code: `from selenium.webdriver.common.by import By
+
+title = driver.find_element(
+    By.CSS_SELECTOR,
+    "h2.title"
+)`,
 
       options: [
-        "YES24의 모든 고객은 리뷰를 신뢰한다.",
+        "페이지를 새로고침한다.",
 
-        "리뷰가 많으면 반드시 판매량이 증가한다.",
+        "CSS Selector 방식으로 HTML 요소를 찾는다.",
 
-        "상품 및 고객 반응 데이터를 활용하여 추천·큐레이션 전략을 설계할 가능성이 있다.",
+        "찾은 HTML 요소를 삭제한다.",
 
-        "경쟁 온라인 서점보다 YES24의 추천 알고리즘이 반드시 우수하다.",
+        "Browser를 종료한다.",
       ],
     },
 
@@ -80,62 +91,68 @@ window.TEST_DATA = {
       score: 8,
 
       question:
-        "최근 구매가 감소한 기존 고객에게 과거 관심분야를 기반으로 경제·경영 도서를 추천하고, Email과 App Push를 통해 다시 방문하도록 한다고 가정합니다. 이때 Email / App Push와 같은 '고객 접점'을 결정하는 것과 가장 직접적으로 관련된 4P 요소는 무엇입니까?",
-
-      scenario:
-        "※ 실제 전략에서는 Place와 Promotion이 서로 연결될 수 있지만, 여기서는 '어떤 접점에서 고객과 만날 것인가'에 초점을 맞춰 답하세요.",
+        "find_element()와 find_elements()의 차이에 대한 설명으로 가장 적절한 것은 무엇입니까?",
 
       options: [
-        "Product",
+        "find_element()는 여러 요소를 List로 반환한다.",
 
-        "Price",
+        "find_elements()는 첫 번째 요소 하나만 반환한다.",
 
-        "Place",
+        "find_element()는 하나의 요소를 찾고, find_elements()는 여러 요소를 List 형태로 찾는다.",
 
-        "Promotion",
+        "두 Method는 이름만 다르고 완전히 같은 역할을 한다.",
       ],
     },
 
     {
       id: "q5",
 
-      type: "multiple",
+      type: "subjective",
 
-      score: 8,
+      score: 10,
 
       question:
-        "Customer Journey와 Data의 관계에 대한 설명으로 가장 적절한 것은 무엇입니까?",
+        "다음 코드를 보고 book_title과 title에 각각 어떤 값이 저장되는지 설명하세요.",
 
-      options: [
-        "Customer Journey는 Persona 작성 후에는 데이터와 관계가 없다.",
+      code: `book_title = driver.find_element(
+    By.CSS_SELECTOR,
+    "h2.title"
+)
 
-        "모든 Customer Journey 단계는 현재 YES24 Crawling Data만으로 완벽하게 측정할 수 있다.",
+title = book_title.text`,
 
-        "고객에게는 하나의 Journey이지만 데이터 관점에서는 Page View, Review, Order 등의 Event로 기록될 수 있다.",
+      scenario:
+        "HTML 예시:\n<h2 class=\"title\">파이썬 데이터 분석</h2>",
 
-        "Customer Journey는 광고를 집행한 이후에만 작성한다.",
-      ],
+      placeholder:
+        "book_title: ...\ntitle: ...",
     },
 
     {
       id: "q6",
 
-      type: "multiple",
+      type: "subjective",
 
-      score: 8,
+      score: 10,
 
       question:
-        "마케터가 '경제·경영 도서를 3회 이상 구매했지만 최근 90일 동안 구매하지 않은 고객을 찾고 싶다'고 요청했습니다. 이를 향후 SQL로 분석할 때 가장 적절한 접근은 무엇입니까?",
+        "다음 Selenium 코드가 어떤 순서로 동작하는지 설명하세요.",
 
-      options: [
-        "고객별 데이터를 GROUP BY하고 구매횟수와 최근 구매일을 집계한 후 조건을 적용한다.",
+      code: `books = driver.find_elements(
+    By.CSS_SELECTOR,
+    "div.book"
+)
 
-        "모든 고객 데이터를 ORDER BY만 사용하여 가나다순으로 정렬한다.",
+for book in books:
+    title = book.find_element(
+        By.CSS_SELECTOR,
+        "h2.title"
+    ).text
 
-        "책 제목에 AVG()를 적용하여 평균 제목을 계산한다.",
+    print(title)`,
 
-        "DELETE를 이용하여 최근 90일 동안 구매하지 않은 고객을 삭제한다.",
-      ],
+      placeholder:
+        "예: 먼저 무엇을 찾고 → 반복문에서 무엇을 하고 → 최종적으로 무엇을 출력하는지 순서대로 설명하세요.",
     },
 
     {
@@ -146,13 +163,21 @@ window.TEST_DATA = {
       score: 12,
 
       question:
-        "다음 Evidence를 이용하여 A와 B를 작성하세요.",
+        "다음 HTML에서 저자(author)를 Selenium으로 수집할 수 있도록 빈칸을 완성하세요.",
 
       scenario:
-        "Evidence: YES24는 도서정보, Rating, Review 등 고객의 도서 선택을 지원할 수 있는 정보를 보유하고 있다.\n\nA. SWOT의 어떤 영역으로 해석할 수 있는가?\nB. 이 Evidence를 활용한 Marketing Strategy를 한 가지 작성하세요.",
+        `<div class="book">
+    <h2 class="title">데이터 분석 입문</h2>
+    <p class="author">홍길동</p>
+</div>`,
+
+      code: `author = book.____________(
+    By.CSS_SELECTOR,
+    "____________"
+).text`,
 
       placeholder:
-        "A. SWOT 영역: ...\nB. Marketing Strategy: ...",
+        "첫 번째 빈칸: ...\n두 번째 빈칸: ...",
     },
 
     {
@@ -163,13 +188,18 @@ window.TEST_DATA = {
       score: 12,
 
       question:
-        "다음 Customer Journey 상황을 읽고 세 가지 질문에 답하세요.",
+        "다음 코드에서 가져온 여러 도서의 제목을 book_list라는 Python List에 저장하도록 코드를 작성하세요.",
+
+      code: `books = driver.find_elements(
+    By.CSS_SELECTOR,
+    "div.book"
+)`,
 
       scenario:
-        "고객 행동: 경제·경영 도서 검색 → 상품 상세페이지 조회 → Review 확인 → 구매하지 않고 이탈\n\n① 이 고객이 구매를 고민하고 있는 주요 Journey Stage는?\n② 이 구간에서 발생한 Bottleneck을 한 문장으로 설명하세요.\n③ 이 문제를 확인하기 위해 향후 Database에서 확인하면 좋은 데이터 2가지를 작성하세요.",
+        "각 div.book 안의 도서 제목 Selector는 h2.title입니다.",
 
       placeholder:
-        "① Journey Stage: ...\n② Bottleneck: ...\n③ 확인할 Data 2가지: ...",
+        "book_list = []부터 시작하여 for 반복문, find_element(), .text, append()를 활용해 작성하세요.",
     },
 
     {
@@ -177,16 +207,16 @@ window.TEST_DATA = {
 
       type: "subjective",
 
-      score: 14,
+      score: 12,
 
       question:
-        "다음 정보를 이용하여 고객에게 전달할 Core Message를 한 문장으로 작성하고, 그 Message가 Target / Pain / Value와 어떻게 연결되는지 간단한 이유를 함께 작성하세요.",
+        "웹페이지가 JavaScript를 통해 데이터를 늦게 불러와 요소를 바로 찾지 못하는 상황에서 사용할 수 있는 Selenium의 대기 기능 이름과 목적을 설명하고, 가능하면 간단한 예시 코드를 작성하세요.",
 
       scenario:
-        "Target: 최근 경제·경영 도서 구매가 감소한 기존 고객\nPain: 다음에 읽을 책을 다시 검색하고 여러 책을 비교하는 과정이 번거롭다.\nValue: 과거 관심·구매 이력을 활용한 개인화 도서 추천\nBenefit: 책을 찾고 비교하는 시간 감소",
+        "힌트: 단순히 정해진 시간만 기다리는 time.sleep()보다 특정 조건이 충족될 때까지 기다리는 방식입니다.",
 
       placeholder:
-        "Core Message: ...\n이유: ...",
+        "기능 이름: ...\n목적: ...\n예시 코드(선택): ...",
     },
 
     {
@@ -194,16 +224,29 @@ window.TEST_DATA = {
 
       type: "subjective",
 
-      score: 14,
+      score: 12,
 
       question:
-        "다음 Campaign을 가정하고 A, B, C를 작성하세요.",
+        "최종 Mission: 아래 HTML 구조에서 각 도서의 title, author, price를 Selenium으로 수집하여 Dictionary로 만들고 book_list에 저장하는 코드를 작성하세요.",
 
       scenario:
-        "Target: 최근 구매가 감소한 기존 경제·경영 도서 고객\nGoal: 재방문 및 재구매 증가\nMessage: 고객의 관심분야를 기반으로 다음 경제책 추천\n\nA. Paid / Owned / Earned Media 중 하나를 선택하고 구체적인 Channel 한 가지를 제안하세요.\nB. 왜 이 Target에게 해당 Channel이 적합한지 작성하세요.\nC. Campaign 종료 후 해당 Channel의 성과를 확인하기 위해 SQL로 답하고 싶은 Business Question 한 가지를 작성하세요.",
+        `<div class="book">
+    <h2 class="title">책 제목</h2>
+    <p class="author">저자명</p>
+    <strong class="price">18,000원</strong>
+</div>
+
+최종 데이터 형태:
+[
+    {
+        "title": "...",
+        "author": "...",
+        "price": "..."
+    }
+]`,
 
       placeholder:
-        "A. Media / Channel: ...\nB. 선택 이유: ...\nC. SQL Business Question: ...",
+        "driver.find_elements() → for → 각 요소 find_element() → .text → Dictionary → append() 순서로 작성하세요.",
     },
   ],
 };
