@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>9/18 Weekend Review Test 정답</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        background: #f5f6f8;
+        color: #101828;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .wrap {
+        max-width: 1120px;
+        margin: auto;
+        padding: 64px 24px 100px;
+      }
+      .hero {
+        margin-bottom: 48px;
+      }
+      .hero small {
+        color: #667085;
+        font-weight: 700;
+      }
+      .hero h1 {
+        font-size: 48px;
+        line-height: 1.15;
+        margin: 10px 0 16px;
+      }
+      .hero p {
+        color: #667085;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      h2 {
+        font-size: 30px;
+        margin: 52px 0 22px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+      .card,
+      .long {
+        background: white;
+        border: 1px solid #e4e7ec;
+        border-radius: 20px;
+        padding: 22px;
+        margin-bottom: 16px;
+      }
+      .card div {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .card b {
+        background: #101828;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 9px;
+      }
+      .card strong {
+        font-size: 19px;
+      }
+      .card p,
+      .long p {
+        line-height: 1.75;
+      }
+      .long h3 {
+        font-size: 21px;
+        margin-top: 0;
+      }
+      pre {
+        background: #101828;
+        color: #f8fafc;
+        padding: 18px;
+        border-radius: 14px;
+        overflow: auto;
+        line-height: 1.6;
+      }
+      .flow {
+        background: #f2f4f7;
+        padding: 14px 16px;
+        border-radius: 12px;
+      }
+      .note {
+        background: #fff;
+        border-radius: 18px;
+        padding: 20px;
+        margin-top: 28px;
+        line-height: 1.7;
+      }
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .hero h1 {
+          font-size: 34px;
+        }
+        .wrap {
+          padding: 36px 16px 70px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <small>2026.09.18 · WEEKEND REVIEW</small>
+        <h1>Python Crawling × MySQL<br />SQL Fundamentals — 정답</h1>
+        <p>
+          객관식 40문항의 정답과 주관식 10문항의 모범답안입니다. 주관식은 표현이
+          달라도 핵심 개념과 SQL 논리가 맞는지 비교해보세요.
+        </p>
+      </header>
+      <section>
+        <h2>01. 객관식 정답 · Q1~Q40</h2>
+        <div class="grid">
+          <article class="card">
+            <div><b>Q01</b><strong>정답 ②</strong></div>
+            <p>Structured Query Language</p>
+          </article>
+          <article class="card">
+            <div><b>Q02</b><strong>정답 ③</strong></div>
+            <p>CREATE = DDL</p>
+          </article>
+          <article class="card">
+            <div><b>Q03</b><strong>정답 ③</strong></div>
+            <p>SELECT = DML</p>
+          </article>
+          <article class="card">
+            <div><b>Q04</b><strong>정답 ③</strong></div>
+            <p>GRANT = DCL</p>
+          </article>
+          <article class="card">
+            <div><b>Q05</b><strong>정답 ④</strong></div>
+            <p>COMMIT = TCL</p>
+          </article>
+          <article class="card">
+            <div><b>Q06</b><strong>정답 ④</strong></div>
+            <p>DROP은 DDL</p>
+          </article>
+          <article class="card">
+            <div><b>Q07</b><strong>정답 ①</strong></div>
+            <p>ALTER</p>
+          </article>
+          <article class="card">
+            <div><b>Q08</b><strong>정답 ②</strong></div>
+            <p>DELETE는 데이터, DROP은 객체 자체를 제거</p>
+          </article>
+          <article class="card">
+            <div><b>Q09</b><strong>정답 ③</strong></div>
+            <p>권한 부여 = DCL</p>
+          </article>
+          <article class="card">
+            <div><b>Q10</b><strong>정답 ②</strong></div>
+            <p>COMMIT</p>
+          </article>
+          <article class="card">
+            <div><b>Q11</b><strong>정답 ②</strong></div>
+            <p>SELECT * FROM products;</p>
+          </article>
+          <article class="card">
+            <div><b>Q12</b><strong>정답 ②</strong></div>
+            <p>product_name, price 조회</p>
+          </article>
+          <article class="card">
+            <div><b>Q13</b><strong>정답 ②</strong></div>
+            <p>WHERE = Row 조건</p>
+          </article>
+          <article class="card">
+            <div><b>Q14</b><strong>정답 ②</strong></div>
+            <p>price >= 150000</p>
+          </article>
+          <article class="card">
+            <div><b>Q15</b><strong>정답 ③</strong></div>
+            <p>brand_name = 'Nike'</p>
+          </article>
+          <article class="card">
+            <div><b>Q16</b><strong>정답 ③</strong></div>
+            <p>3개</p>
+          </article>
+          <article class="card">
+            <div><b>Q17</b><strong>정답 ②</strong></div>
+            <p>Samba, Air Force, 530</p>
+          </article>
+          <article class="card">
+            <div><b>Q18</b><strong>정답 ③</strong></div>
+            <p>조건을 만족하는 Row 선택</p>
+          </article>
+          <article class="card">
+            <div><b>Q19</b><strong>정답 ②</strong></div>
+            <p>FROM = Table 결정</p>
+          </article>
+          <article class="card">
+            <div><b>Q20</b><strong>정답 ②</strong></div>
+            <p>리뷰 200개 이상 상품 조회</p>
+          </article>
+          <article class="card">
+            <div><b>Q21</b><strong>정답 ②</strong></div>
+            <p>AS = Alias(별칭)</p>
+          </article>
+          <article class="card">
+            <div><b>Q22</b><strong>정답 ②</strong></div>
+            <p>상품명, 판매가격</p>
+          </article>
+          <article class="card">
+            <div><b>Q23</b><strong>정답 ②</strong></div>
+            <p>원본 Column은 변경되지 않음</p>
+          </article>
+          <article class="card">
+            <div><b>Q24</b><strong>정답 ③</strong></div>
+            <p>DISTINCT</p>
+          </article>
+          <article class="card">
+            <div><b>Q25</b><strong>정답 ②</strong></div>
+            <p>브랜드 3종</p>
+          </article>
+          <article class="card">
+            <div><b>Q26</b><strong>정답 ②</strong></div>
+            <p>LIMIT 3</p>
+          </article>
+          <article class="card">
+            <div><b>Q27</b><strong>정답 ②</strong></div>
+            <p>중복 제거 후 최대 2개 Row</p>
+          </article>
+          <article class="card">
+            <div><b>Q28</b><strong>정답 ②</strong></div>
+            <p>ORDER BY</p>
+          </article>
+          <article class="card">
+            <div><b>Q29</b><strong>정답 ②</strong></div>
+            <p>DESC = 내림차순</p>
+          </article>
+          <article class="card">
+            <div><b>Q30</b><strong>정답 ①</strong></div>
+            <p>price ASC</p>
+          </article>
+          <article class="card">
+            <div><b>Q31</b><strong>정답 ③</strong></div>
+            <p>Air Force</p>
+          </article>
+          <article class="card">
+            <div><b>Q32</b><strong>정답 ②</strong></div>
+            <p>가장 비싼 상품</p>
+          </article>
+          <article class="card">
+            <div><b>Q33</b><strong>정답 ②</strong></div>
+            <p>동일 값을 기준으로 그룹화</p>
+          </article>
+          <article class="card">
+            <div><b>Q34</b><strong>정답 ②</strong></div>
+            <p>브랜드별 상품 개수</p>
+          </article>
+          <article class="card">
+            <div><b>Q35</b><strong>정답 ①</strong></div>
+            <p>Nike</p>
+          </article>
+          <article class="card">
+            <div><b>Q36</b><strong>정답 ②</strong></div>
+            <p>FROM → WHERE → GROUP BY → SELECT → ORDER BY → LIMIT</p>
+          </article>
+          <article class="card">
+            <div><b>Q37</b><strong>정답 ②</strong></div>
+            <p>구조적 저장·조회·분석</p>
+          </article>
+          <article class="card">
+            <div><b>Q38</b><strong>정답 ②</strong></div>
+            <p>DISTINCT brand_name</p>
+          </article>
+          <article class="card">
+            <div><b>Q39</b><strong>정답 ①</strong></div>
+            <p>WHERE + ORDER BY DESC + LIMIT 5</p>
+          </article>
+          <article class="card">
+            <div><b>Q40</b><strong>정답 ③</strong></div>
+            <p>관찰 결과와 인과관계를 구분</p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>02. 주관식 모범답안 · Q41~Q50</h2>
+        <article class="long">
+          <h3>Q41 · 모범답안</h3>
+          <p>
+            <b>DDL</b> = Data Definition Language(데이터 정의어): CREATE, ALTER,
+            DROP 등으로 구조를 정의합니다.<br /><b>DML</b> = Data Manipulation
+            Language(데이터 조작어): SELECT, INSERT, UPDATE, DELETE 등으로
+            데이터를 조작합니다.<br /><b>DCL</b> = Data Control Language(데이터
+            제어어): GRANT, REVOKE 등으로 권한을 제어합니다.<br /><b>TCL</b> =
+            Transaction Control Language(트랜잭션 제어어): COMMIT, ROLLBACK
+            등으로 Transaction을 제어합니다.
+          </p>
+        </article>
+
+        <article class="long">
+          <h3>Q42 · 모범답안</h3>
+          <p>
+            products 테이블에서 가격이 150,000원 이상인 상품의 상품명과 가격을
+            조회하고, 가격이 높은 순서로 정렬합니다. 조회 결과에서는 각각
+            상품명, 가격이라는 Alias로 표시합니다.
+          </p>
+          <pre>
+SELECT
+    product_name AS 상품명,
+    price AS 가격
+FROM products
+WHERE price >= 150000
+ORDER BY price DESC;</pre
+          >
+        </article>
+
+        <article class="long">
+          <h3>Q43 · 모범답안</h3>
+          <p>
+            <b>DISTINCT</b>는 조회 결과의 중복 값을 제거합니다.
+            <b>GROUP BY</b>는 동일한 값을 기준으로 Row를 그룹화하며 COUNT(),
+            AVG(), SUM() 등의 집계함수와 함께 그룹별 통계를 계산할 때 주로
+            사용합니다.
+          </p>
+        </article>
+
+        <article class="long">
+          <h3>Q44 · 정답</h3>
+          <pre>
+SELECT
+    product_name,
+    price
+FROM products
+WHERE price >= 100000;</pre
+          >
+        </article>
+
+        <article class="long">
+          <h3>Q45 · 정답</h3>
+          <pre>
+SELECT
+    product_name,
+    review_count
+FROM products
+ORDER BY review_count DESC
+LIMIT 10;</pre
+          >
+        </article>
+
+        <article class="long">
+          <h3>Q46 · 정답</h3>
+          <pre>
+SELECT DISTINCT
+    brand_name
+FROM products;</pre
+          >
+        </article>
+
+        <article class="long">
+          <h3>Q47 · 정답</h3>
+          <pre>
+SELECT
+    brand_name,
+    COUNT(*) AS product_count
+FROM products
+GROUP BY brand_name
+ORDER BY product_count DESC;</pre
+          >
+        </article>
+
+        <article class="long">
+          <h3>Q48 · 정답</h3>
+          <p>GROUP BY와 ORDER BY의 작성 순서가 잘못되었습니다.</p>
+          <pre>
+SELECT
+    brand_name,
+    AVG(price) AS avg_price
+FROM products
+WHERE price >= 100000
+GROUP BY brand_name
+ORDER BY avg_price DESC;</pre
+          >
+        </article>
+
+        <article class="long">
+          <h3>Q49 · 모범답안</h3>
+          <p>
+            Python Crawling으로 웹사이트에서 필요한 데이터를 <b>수집</b>하고,
+            MySQL에 구조적으로 <b>저장</b>합니다. 이후 SQL로 필요한 데이터를
+            <b>조회</b>하고 조건·그룹·정렬·집계 등을 활용하여 <b>분석</b>합니다.
+          </p>
+          <p class="flow">
+            Python Crawling(수집) → MySQL(저장) → SQL(조회) → Analysis(분석)
+          </p>
+        </article>
+
+        <article class="long">
+          <h3>Q50 · 최종 Mission 정답</h3>
+          <pre>
+SELECT
+    brand_name,
+    AVG(sale_price) AS avg_sale_price
+FROM products
+WHERE review_count >= 1
+GROUP BY brand_name
+ORDER BY avg_sale_price DESC
+LIMIT 5;</pre
+          >
+          <p>
+            <b>SELECT → FROM → WHERE → GROUP BY → AS → ORDER BY → LIMIT</b>의
+            흐름을 확인하는 종합문제입니다.
+          </p>
+        </article>
+      </section>
+      <div class="note">
+        <b>배점</b> · 객관식 40 × 1.5점 = 60점 / 주관식 10 × 4점 = 40점 / 총
+        100점
+      </div>
+    </main>
+  </body>
+</html>
