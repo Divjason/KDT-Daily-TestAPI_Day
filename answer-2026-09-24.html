@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>9/24 SQL Daily Mission — 정답</title>
+
+    <!-- 기존 Daily Test CSS 재사용 -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      body {
+        background: #f5f6f8;
+        color: #101828;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+          sans-serif;
+      }
+
+      .answer-wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 64px 24px 100px;
+      }
+
+      .answer-hero {
+        margin-bottom: 50px;
+      }
+
+      .answer-hero small {
+        color: #667085;
+        font-weight: 700;
+      }
+
+      .answer-hero h1 {
+        margin: 12px 0 16px;
+        font-size: clamp(36px, 5vw, 56px);
+        line-height: 1.15;
+      }
+
+      .answer-hero p {
+        color: #667085;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      .section-title {
+        margin: 52px 0 22px;
+        font-size: 30px;
+      }
+
+      .answer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .answer-card {
+        background: #fff;
+        border: 1px solid #e4e7ec;
+        border-radius: 20px;
+        padding: 24px;
+      }
+
+      .answer-card.subjective {
+        margin-bottom: 18px;
+      }
+
+      .q-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      .q-no {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 56px;
+        height: 38px;
+        padding: 0 12px;
+        border-radius: 10px;
+        background: #101828;
+        color: #fff;
+        font-weight: 800;
+      }
+
+      .correct-answer {
+        font-size: 19px;
+        font-weight: 800;
+      }
+
+      .answer-card p {
+        margin: 8px 0;
+        line-height: 1.75;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 18px;
+        border-radius: 14px;
+        background: #101828;
+        color: #f8fafc;
+        line-height: 1.6;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+
+      .concept {
+        margin-top: 14px;
+        padding: 14px 16px;
+        background: #f2f4f7;
+        border-radius: 12px;
+        line-height: 1.7;
+      }
+
+      .summary {
+        margin-top: 40px;
+        padding: 22px;
+        background: #fff;
+        border-radius: 18px;
+        line-height: 1.8;
+      }
+
+      @media (max-width: 760px) {
+        .answer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .answer-wrap {
+          padding: 36px 16px 70px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="answer-wrap">
+      <!-- ========================================
+       HERO
+  ========================================= -->
+
+      <header class="answer-hero">
+        <small> 2026.09.24 · CHUSEOK SQL DAILY MISSION </small>
+
+        <h1>
+          DAY 1<br />
+          SQL Fundamentals → JOIN → Subquery
+        </h1>
+
+        <p>
+          9월 24일 SQL Daily Mission의 정답 및 주관식 모범답안입니다. 단순히
+          정답만 확인하지 말고, 틀린 문제는 SQL이 어떤 순서와 논리로 동작하는지
+          다시 확인해보세요.
+        </p>
+      </header>
+
+      <!-- ========================================
+       객관식
+  ========================================= -->
+
+      <section>
+        <h2 class="section-title">01. 객관식 정답 · Q1 ~ Q15</h2>
+
+        <div class="answer-grid">
+          <!-- Q1 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q01</span>
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              <strong>WHERE</strong>는 특정 조건을 만족하는 Row를 선택할 때
+              사용합니다.
+            </p>
+
+            <div class="concept">
+              WHERE → 어떤 데이터를 가져올 것인지 조건을 지정
+            </div>
+          </article>
+
+          <!-- Q2 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q02</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              결과는
+              <strong>서울, 부산, 대전</strong>입니다.
+            </p>
+
+            <p>DISTINCT는 조회 결과에서 중복 값을 제거합니다.</p>
+          </article>
+
+          <!-- Q3 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q03</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              <strong>DESC</strong>
+              = Descending = 내림차순입니다.
+            </p>
+
+            <p>따라서 가격이 높은 값부터 출력됩니다.</p>
+          </article>
+
+          <!-- Q4 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q04</span>
+
+              <span class="correct-answer"> 정답 ① </span>
+            </div>
+
+            <p>
+              정답은
+              <strong>스마트워치, 러닝화</strong>입니다.
+            </p>
+
+            <div class="concept">
+              WHERE → 10만원 이상 필터링<br />
+              ORDER BY DESC → 높은 가격부터 정렬<br />
+              LIMIT 2 → 상위 2개만 출력
+            </div>
+          </article>
+
+          <!-- Q5 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q05</span>
+
+              <span class="correct-answer"> 정답 ① </span>
+            </div>
+
+            <pre><code>SELECT AVG(price)
+FROM products
+WHERE category = '디지털';</code></pre>
+
+            <p>
+              AVG()는
+              <strong>Average</strong>, 즉 평균을 계산하는 집계함수입니다.
+            </p>
+          </article>
+
+          <!-- Q6 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q06</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p><strong>카테고리별 상품 개수</strong>를 계산합니다.</p>
+
+            <div class="concept">
+              GROUP BY category → 카테고리별 그룹 생성
+              <br />
+              COUNT(*) → 각 그룹의 Row 개수 계산
+            </div>
+          </article>
+
+          <!-- Q7 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q07</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              order_count는
+              <strong>고객별 주문 Row 수</strong>를 의미합니다.
+            </p>
+          </article>
+
+          <!-- Q8 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q08</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              WHERE는 일반적으로
+              <strong>그룹화 이전 Row</strong>를 필터링합니다.
+            </p>
+
+            <p>
+              HAVING은 GROUP BY 이후
+              <strong>그룹화된 결과</strong>에 조건을 적용합니다.
+            </p>
+          </article>
+
+          <!-- Q9 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q09</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              JOIN은 서로 관련된 여러 Table의 데이터를
+              <strong>연결하여 조회</strong>할 때 사용합니다.
+            </p>
+          </article>
+
+          <!-- Q10 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q10</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              ON은 두 Table을
+              <strong>어떤 Column 관계로 연결할 것인지</strong>
+              지정합니다.
+            </p>
+
+            <pre><code>ON c.customer_id
+ = o.customer_id</code></pre>
+          </article>
+
+          <!-- Q11 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q11</span>
+
+              <span class="correct-answer"> 정답 ③ </span>
+            </div>
+
+            <p>
+              김민지의 customer_id는 1이며, orders에 해당 고객의 주문이 2건
+              존재합니다.
+            </p>
+
+            <p>따라서 <strong>2 Row</strong>가 출력됩니다.</p>
+          </article>
+
+          <!-- Q12 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q12</span>
+
+              <span class="correct-answer"> 정답 ④ </span>
+            </div>
+
+            <p>필요한 관계는 다음과 같습니다.</p>
+
+            <div class="concept">customers → orders → products</div>
+
+            <p>customers와 products 사이를 orders가 연결합니다.</p>
+          </article>
+
+          <!-- Q13 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q13</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              <strong>Subquery</strong>
+              = 서브쿼리란 하나의 SQL 내부에 포함된 또 다른 Query를 의미합니다.
+            </p>
+          </article>
+
+          <!-- Q14 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q14</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              전체 상품의 평균 가격을 먼저 계산한 뒤, 그 평균보다 가격이 높은
+              상품을 조회합니다.
+            </p>
+
+            <pre><code>WHERE price > (
+    SELECT AVG(price)
+    FROM products
+)</code></pre>
+          </article>
+
+          <!-- Q15 -->
+
+          <article class="answer-card">
+            <div class="q-head">
+              <span class="q-no">Q15</span>
+
+              <span class="correct-answer"> 정답 ② </span>
+            </div>
+
+            <p>
+              내부 Subquery는 먼저
+              <strong>quantity가 2 이상인 주문의 product_id</strong>를
+              조회합니다.
+            </p>
+
+            <pre><code>SELECT product_id
+FROM orders
+WHERE quantity >= 2;</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========================================
+       주관식
+  ========================================= -->
+
+      <section>
+        <h2 class="section-title">02. 주관식 모범답안 · Q16 ~ Q20</h2>
+
+        <!-- Q16 -->
+
+        <article class="answer-card subjective">
+          <div class="q-head">
+            <span class="q-no"> Q16 </span>
+
+            <span class="correct-answer"> WHERE + ORDER BY </span>
+          </div>
+
+          <pre><code>SELECT
+    product_name,
+    price
+FROM products
+WHERE price >= 100000
+ORDER BY price DESC;</code></pre>
+
+          <div class="concept">
+            ① products에서 조회 → ② 100,000원 이상 필터링 → ③ 가격 내림차순 정렬
+          </div>
+        </article>
+
+        <!-- Q17 -->
+
+        <article class="answer-card subjective">
+          <div class="q-head">
+            <span class="q-no"> Q17 </span>
+
+            <span class="correct-answer"> GROUP BY </span>
+          </div>
+
+          <pre><code>SELECT
+    category,
+    COUNT(*) AS product_count
+FROM products
+GROUP BY category;</code></pre>
+
+          <p>
+            같은 category를 하나의 그룹으로 묶고 각 그룹의 상품 개수를
+            계산합니다.
+          </p>
+        </article>
+
+        <!-- Q18 -->
+
+        <article class="answer-card subjective">
+          <div class="q-head">
+            <span class="q-no"> Q18 </span>
+
+            <span class="correct-answer"> 2 Table JOIN </span>
+          </div>
+
+          <pre><code>SELECT
+    c.customer_name,
+    o.order_id
+FROM customers AS c
+JOIN orders AS o
+    ON c.customer_id = o.customer_id;</code></pre>
+
+          <div class="concept">customers.customer_id ↔ orders.customer_id</div>
+        </article>
+
+        <!-- Q19 -->
+
+        <article class="answer-card subjective">
+          <div class="q-head">
+            <span class="q-no"> Q19 </span>
+
+            <span class="correct-answer"> 3 Table JOIN </span>
+          </div>
+
+          <pre><code>SELECT
+    c.customer_name,
+    p.product_name,
+    o.quantity
+FROM customers AS c
+JOIN orders AS o
+    ON c.customer_id = o.customer_id
+JOIN products AS p
+    ON o.product_id = p.product_id;</code></pre>
+
+          <div class="concept">customers → orders → products</div>
+
+          <p>
+            이 문제에서 핵심은
+            <strong>orders가 customers와 products를 연결하는 중간 Table</strong
+            >이라는 점입니다.
+          </p>
+        </article>
+
+        <!-- Q20 -->
+
+        <article class="answer-card subjective">
+          <div class="q-head">
+            <span class="q-no"> Q20 </span>
+
+            <span class="correct-answer"> Final Subquery Mission </span>
+          </div>
+
+          <pre><code>SELECT
+    product_name,
+    price
+FROM products
+WHERE price > (
+    SELECT AVG(price)
+    FROM products
+)
+ORDER BY price DESC;</code></pre>
+
+          <p>내부 Query가 먼저 전체 상품의 평균 가격을 계산합니다.</p>
+
+          <div class="concept">
+            Subquery → 평균 가격 계산
+            <br /><br />
+
+            Main Query → 평균보다 비싼 상품 선택
+            <br /><br />
+
+            ORDER BY → 가격이 높은 순서로 정렬
+          </div>
+        </article>
+      </section>
+
+      <!-- ========================================
+       핵심 복습
+  ========================================= -->
+
+      <section class="summary">
+        <strong> 9/24 핵심 복습 </strong>
+
+        <p>
+          SELECT / FROM → 데이터를 조회한다.
+          <br />
+
+          WHERE → Row에 조건을 적용한다.
+          <br />
+
+          GROUP BY → 같은 값을 기준으로 그룹화한다.
+          <br />
+
+          HAVING → 그룹화된 결과에 조건을 적용한다.
+          <br />
+
+          ORDER BY → 결과를 정렬한다.
+          <br />
+
+          LIMIT → 출력 Row 수를 제한한다.
+          <br />
+
+          JOIN → 서로 관련된 Table을 연결한다.
+          <br />
+
+          Subquery → Query 안에서 또 다른 Query의 결과를 활용한다.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
